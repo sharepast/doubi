@@ -1629,8 +1629,8 @@ Status_BBR(){
 Other_functions(){
 	echo && echo -e "  你要做什么？
 	
-  ${Green_font_prefix}1.${Font_color_suffix} 配置 BBR
-  ${Green_font_prefix}2.${Font_color_suffix} 配置 锐速(ServerSpeeder)
+  $ {Green_font_prefix} 1. $ {Font_color_suffix} 安装Netspeed
+  $ {Green_font_prefix} 2. $ {Font_color_suffix} 配置锐速（ServerSpeeder）
   ${Green_font_prefix}3.${Font_color_suffix} 配置 LotServer(锐速母公司)
   ${Tip} 锐速/LotServer/BBR 不支持 OpenVZ！
   ${Tip} 锐速和LotServer不能共存！
