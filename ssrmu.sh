@@ -70,13 +70,13 @@ LotServer_installation_status(){
 }
 BBR_installation_status(){
 	if [[ ! -e ${BBR_file} ]]; then
-		echo -e "${Error} 没有发现 BBR脚本，开始下载..."
+		echo -e "${Error} 没有发现 NetSpeed脚本，开始下载..."
 		cd "${file}"
-		if ! wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/bbr.sh; then
-			echo -e "${Error} BBR 脚本下载失败 !" && exit 1
+		if ! wget -N --no-check-certificate https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh; then
+			echo -e "${Error} Netspeed 脚本下载失败 !" && exit 1
 		else
-			echo -e "${Info} BBR 脚本下载完成 !"
-			chmod +x bbr.sh
+			echo -e "${Info} Netspeed 脚本下载完成 !"
+			chmod +x ./tcp.sh
 		fi
 	fi
 }
